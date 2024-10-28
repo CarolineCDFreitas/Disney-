@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header {
+  font-family: "Lily Script One", system-ui;
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3rem;
+  font-size: 2rem;
+  margin: 0 auto;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.disney {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+main {
+  flex: 1;
+}
+
+.pagina-inicial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  gap: 30px;
+
+  .image-link {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 30px;
+    border-radius: 4.375rem;
+  }
+
+  img {
+    display: block;
+    border: transparent solid 5px;
+    border-radius: 4.375rem;
+    transition: border-color 0.5s ease;
+    max-width: 100%;
+    height: auto;
+
+    &:hover {
+      border-color: #00a3e0;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 0 10px 0;
+
+  p {
+    color: white;
+    padding-inline: 2rem;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding-left: 3rem;
+  margin-inline: 3rem;
+  gap: 1.875rem;
+  
+  .links {
+    display: inline-block;
+    flex: 1;
+  }
+
+  img {
+    display: inline-block;
+    max-width: 4rem;
+    max-height: 4rem;
+    border: transparent solid 5px;
+    border-radius: 15px;
+
+    &:hover {
+      border-color: #00a3e0;
+    }
+  }
+}
